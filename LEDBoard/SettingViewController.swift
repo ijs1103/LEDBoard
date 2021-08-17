@@ -24,26 +24,36 @@ class SettingViewController: UIViewController {
   @IBOutlet weak var orangeButton: UIButton!
 
   weak var delegate: LEDBoardSettingDelegate?
+
+  var textColor: UIColor = .yellow
+  var backgroudColor: UIColor = .black
+
   override func viewDidLoad() {
     super.viewDidLoad()
   }
 
   @IBAction func tapTextColorButton(_ sender: UIButton) {
     if sender == yellowButton {
+      self.textColor = .yellow
       self.changeTextColorButton(color: .yellow)
     } else if sender == purpleButton {
+      self.textColor = .purple
       self.changeTextColorButton(color: .purple)
     } else {
+      self.textColor = .green
       self.changeTextColorButton(color: .green)
     }
   }
 
   @IBAction func tapBackgroundColorButton(_ sender: UIButton) {
     if sender == blackButton {
+      self.backgroudColor = .black
       self.changeBackgroundColorButton(color: .black)
     } else if sender == blueButton {
+      self.backgroudColor = .blue
       self.changeBackgroundColorButton(color: .blue)
     } else {
+      self.backgroudColor = .orange
       self.changeBackgroundColorButton(color: .orange)
     }
   }
