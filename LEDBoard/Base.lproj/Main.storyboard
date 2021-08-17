@@ -64,7 +64,7 @@
         <!--설정-->
         <scene sceneID="IKW-hh-vGM">
             <objects>
-                <viewController id="vmi-wK-0gd" sceneMemberID="viewController">
+                <viewController id="vmi-wK-0gd" customClass="SettingViewController" customModule="LEDBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Sx-PO-gn4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,14 +104,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyX-FZ-otJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="yellow_circle"/>
+                                                <connections>
+                                                    <action selector="tapTextColorButton:" destination="vmi-wK-0gd" eventType="touchUpInside" id="0Y5-eO-hTd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWb-EB-eNK">
                                                 <rect key="frame" x="56" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="purple_circle"/>
+                                                <connections>
+                                                    <action selector="tapTextColorButton:" destination="vmi-wK-0gd" eventType="touchUpInside" id="iTo-tY-eBP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRE-Vt-j3u">
                                                 <rect key="frame" x="112" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="green_circle"/>
+                                                <connections>
+                                                    <action selector="tapTextColorButton:" destination="vmi-wK-0gd" eventType="touchUpInside" id="MXY-Qh-RXe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -132,14 +141,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5H-Ts-hw4">
                                                 <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="black_circle"/>
+                                                <connections>
+                                                    <action selector="tapBackgroundColorButton:" destination="vmi-wK-0gd" eventType="touchUpInside" id="kvJ-dU-IqS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRn-uz-Nm0">
                                                 <rect key="frame" x="56" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="blue_circle"/>
+                                                <connections>
+                                                    <action selector="tapBackgroundColorButton:" destination="vmi-wK-0gd" eventType="touchUpInside" id="MQ9-Nz-6G0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKA-V0-TNv">
                                                 <rect key="frame" x="112" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="orange_cricle"/>
+                                                <connections>
+                                                    <action selector="tapBackgroundColorButton:" destination="vmi-wK-0gd" eventType="touchUpInside" id="EjE-dj-ekk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -148,6 +166,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcH-P9-11j">
                                 <rect key="frame" x="192" y="406.5" width="30" height="30"/>
                                 <state key="normal" title="저장"/>
+                                <connections>
+                                    <action selector="tapSaveButton:" destination="vmi-wK-0gd" eventType="touchUpInside" id="bbp-56-MSn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OX0-V5-x6h"/>
@@ -167,6 +188,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="설정" id="7rb-Lg-Z0A"/>
+                    <connections>
+                        <outlet property="blackButton" destination="H5H-Ts-hw4" id="eji-kg-HMI"/>
+                        <outlet property="blueButton" destination="fRn-uz-Nm0" id="9fa-r2-myY"/>
+                        <outlet property="greenButton" destination="pRE-Vt-j3u" id="tE3-LK-hhk"/>
+                        <outlet property="orangeButton" destination="BKA-V0-TNv" id="F0A-aP-wsY"/>
+                        <outlet property="purpleButton" destination="hWb-EB-eNK" id="KLl-Cn-VUX"/>
+                        <outlet property="textField" destination="7fV-AR-9qj" id="Urj-06-kUh"/>
+                        <outlet property="yellowButton" destination="kyX-FZ-otJ" id="XKr-in-8sm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnL-Ql-Kd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
