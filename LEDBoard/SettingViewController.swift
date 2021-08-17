@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol LEDBoardSettingDelegate: AnyObject {
+  func changedSetting(text: String?, textColor: UIColor, backgroudColor: UIColor)
+}
+
 class SettingViewController: UIViewController {
 
   @IBOutlet weak var textField: UITextField!
@@ -19,6 +23,7 @@ class SettingViewController: UIViewController {
   @IBOutlet weak var blueButton: UIButton!
   @IBOutlet weak var orangeButton: UIButton!
 
+  weak var delegate: LEDBoardSettingDelegate?
   override func viewDidLoad() {
     super.viewDidLoad()
   }
