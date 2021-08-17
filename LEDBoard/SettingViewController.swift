@@ -58,6 +58,15 @@ class SettingViewController: UIViewController {
     }
   }
 
+  @IBAction func tapSaveButton(_ sender: Any) {
+    self.delegate?.changedSetting(
+      text: self.textField.text,
+      textColor: self.textColor,
+      backgroudColor: self.backgroudColor
+    )
+    self.navigationController?.popViewController(animated: true)
+  }
+
   private func changeTextColorButton(color: UIColor) {
     self.yellowButton.alpha = color == UIColor.yellow ? 1 : 0.2
     self.purpleButton.alpha = color == UIColor.purple ? 1 : 0.2
@@ -68,7 +77,5 @@ class SettingViewController: UIViewController {
     self.blackButton.alpha = color == UIColor.black ? 1 : 0.2
     self.blueButton.alpha = color == UIColor.blue ? 1 : 0.2
     self.orangeButton.alpha = color == UIColor.orange ? 1 : 0.2
-  }
-  @IBAction func tapSaveButton(_ sender: Any) {
   }
 }
