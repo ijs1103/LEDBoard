@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1G-l7-bph">
-                                <rect key="frame" x="24" y="418" width="366" height="60"/>
+                                <rect key="frame" x="148.5" y="418" width="117" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,10 +42,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A1G-l7-bph" secondAttribute="trailing" constant="24" id="64X-Rt-K8m"/>
                             <constraint firstItem="A1G-l7-bph" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DtE-55-MNN"/>
                             <constraint firstItem="A1G-l7-bph" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IWN-hs-8SG"/>
-                            <constraint firstItem="A1G-l7-bph" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="mhC-4D-6yA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5UC-Sx-1mf">
@@ -89,7 +87,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5PK-iY-sSb">
-                                <rect key="frame" x="24" y="216.5" width="366" height="65.5"/>
+                                <rect key="frame" x="24" y="216.5" width="366" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="텍스트 색상 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJ6-xY-aPv">
                                         <rect key="frame" x="0.0" y="0.0" width="112" height="20.5"/>
@@ -98,26 +96,26 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Mu4-ay-WIs">
-                                        <rect key="frame" x="0.0" y="35.5" width="165" height="30"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="144" height="32"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyX-FZ-otJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
-                                                <state key="normal" title="노란색"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyX-FZ-otJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                <state key="normal" image="yellow_circle"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWb-EB-eNK">
-                                                <rect key="frame" x="63" y="0.0" width="39" height="30"/>
-                                                <state key="normal" title="자주색"/>
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWb-EB-eNK">
+                                                <rect key="frame" x="56" y="0.0" width="32" height="32"/>
+                                                <state key="normal" image="purple_circle"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRE-Vt-j3u">
-                                                <rect key="frame" x="126" y="0.0" width="39" height="30"/>
-                                                <state key="normal" title="초록색"/>
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRE-Vt-j3u">
+                                                <rect key="frame" x="112" y="0.0" width="32" height="32"/>
+                                                <state key="normal" image="green_circle"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Lhe-e6-0Nb">
-                                <rect key="frame" x="24" y="317" width="366" height="65.5"/>
+                                <rect key="frame" x="24" y="319" width="366" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배경 색상 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYC-cY-39w">
                                         <rect key="frame" x="0.0" y="0.0" width="97" height="20.5"/>
@@ -126,26 +124,26 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="vQj-3A-xAw">
-                                        <rect key="frame" x="0.0" y="35.5" width="165" height="30"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="144" height="32"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5H-Ts-hw4">
-                                                <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
-                                                <state key="normal" title="검정색"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5H-Ts-hw4">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                <state key="normal" image="black_circle"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRn-uz-Nm0">
-                                                <rect key="frame" x="63" y="0.0" width="39" height="30"/>
-                                                <state key="normal" title="파란색"/>
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRn-uz-Nm0">
+                                                <rect key="frame" x="56" y="0.0" width="32" height="32"/>
+                                                <state key="normal" image="blue_circle"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKA-V0-TNv">
-                                                <rect key="frame" x="126" y="0.0" width="39" height="30"/>
-                                                <state key="normal" title="주황색"/>
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKA-V0-TNv">
+                                                <rect key="frame" x="112" y="0.0" width="32" height="32"/>
+                                                <state key="normal" image="orange_cricle"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcH-P9-11j">
-                                <rect key="frame" x="24" y="417.5" width="366" height="30"/>
+                                <rect key="frame" x="192" y="406.5" width="30" height="30"/>
                                 <state key="normal" title="저장"/>
                             </button>
                         </subviews>
@@ -157,13 +155,11 @@
                             <constraint firstItem="OX0-V5-x6h" firstAttribute="trailing" secondItem="1vb-Vf-2CH" secondAttribute="trailing" constant="24" id="F8b-xX-1ck"/>
                             <constraint firstItem="Lhe-e6-0Nb" firstAttribute="top" secondItem="5PK-iY-sSb" secondAttribute="bottom" constant="35" id="JTE-vc-Q8e"/>
                             <constraint firstItem="1vb-Vf-2CH" firstAttribute="leading" secondItem="OX0-V5-x6h" secondAttribute="leading" constant="24" id="NIq-uv-Ntu"/>
-                            <constraint firstItem="OX0-V5-x6h" firstAttribute="trailing" secondItem="dcH-P9-11j" secondAttribute="trailing" constant="24" id="Pgx-tw-0So"/>
                             <constraint firstItem="OX0-V5-x6h" firstAttribute="trailing" secondItem="5PK-iY-sSb" secondAttribute="trailing" constant="24" id="eFg-Pz-a9R"/>
                             <constraint firstItem="Lhe-e6-0Nb" firstAttribute="leading" secondItem="OX0-V5-x6h" secondAttribute="leading" constant="24" id="eag-Yl-2hW"/>
                             <constraint firstItem="1vb-Vf-2CH" firstAttribute="top" secondItem="OX0-V5-x6h" secondAttribute="top" constant="24" id="loE-LT-pGQ"/>
                             <constraint firstItem="5PK-iY-sSb" firstAttribute="top" secondItem="1vb-Vf-2CH" secondAttribute="bottom" constant="35" id="ruK-ff-cyo"/>
-                            <constraint firstItem="dcH-P9-11j" firstAttribute="leading" secondItem="OX0-V5-x6h" secondAttribute="leading" constant="24" id="u6Q-cl-9SE"/>
-                            <constraint firstItem="dcH-P9-11j" firstAttribute="top" secondItem="Lhe-e6-0Nb" secondAttribute="bottom" constant="35" id="vBw-h6-S4U"/>
+                            <constraint firstItem="dcH-P9-11j" firstAttribute="top" secondItem="Lhe-e6-0Nb" secondAttribute="bottom" constant="20" id="vBw-h6-S4U"/>
                             <constraint firstItem="OX0-V5-x6h" firstAttribute="trailing" secondItem="Lhe-e6-0Nb" secondAttribute="trailing" constant="24" id="x27-Yg-TiL"/>
                         </constraints>
                     </view>
@@ -171,10 +167,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnL-Ql-Kd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="139"/>
+            <point key="canvasLocation" x="974" y="134"/>
         </scene>
     </scenes>
     <resources>
+        <image name="black_circle" width="32" height="32"/>
+        <image name="blue_circle" width="32" height="32"/>
+        <image name="green_circle" width="32" height="32"/>
+        <image name="orange_cricle" width="32" height="32"/>
+        <image name="purple_circle" width="32" height="32"/>
+        <image name="yellow_circle" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
