@@ -19,6 +19,9 @@ class ViewController: UIViewController, LEDBoardSettingDelegate {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let settingViewController = segue.destination as? SettingViewController {
       settingViewController.delegate = self
+      settingViewController.ledText = self.contentsLabel.text
+      settingViewController.textColor = self.contentsLabel.textColor
+      settingViewController.backgroudColor = self.view.backgroundColor ?? .black
     }
   }
 
