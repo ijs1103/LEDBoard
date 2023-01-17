@@ -14,7 +14,7 @@
 
 직접세그웨이 방식으로 전달. segue.destination를 다운캐스팅하여 `settingViewController`를 호출하고 데이터를 넘겨준다.
 
-> `settingViewController` 에서 `viewController`
+> `settingViewController` 에서 `viewController`로
 
 `settingViewController`에서 커스텀 델리게이트로 데이터를 넘겨준다. 이 때, `viewController`는 해당 프로토콜을 채택한다.
 
